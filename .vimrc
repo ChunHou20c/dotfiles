@@ -4,5 +4,5 @@ set smarttab
 set tabstop=4
 set laststatus=2
 set number
-colorscheme slate
+colorscheme elflord
 syntax on
