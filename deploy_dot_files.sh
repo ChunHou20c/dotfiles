@@ -8,3 +8,4 @@ ln -s $CURRENT_DIRECTORY"/kitty.conf" $HOME/.config/kitty/kitty.conf
 ln -s $CURRENT_DIRECTORY"/config" $HOME/.config/i3/config
 ln -s $CURRENT_DIRECTORY"/i3.conf.d" $HOME/.config/i3/i3.conf.d
 ln -s $CURRENT_DIRECTORY"/picom.conf" $HOME/.config/picom/picom.conf
+ln -s $CURRENT_DIRECTORY"/.conkyrc" $HOME/.conkyrc
