@@ -10,6 +10,7 @@
 		"clock#3",
 		"custom/lego-light",
 		"custom/right-arrow-dark",
+        "custom/external_ip"
 	],
 	"modules-center": [
 		"custom/honeycomb-separator-light",
@@ -20,19 +21,19 @@
 		"custom/left-arrow-dark",
 		"custom/lego-light",
 		"network",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"pulseaudio",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"battery",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"disk",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"tray"
 	],
+
+    "custom/external_ip" : {
+        "format":{},
+        "tooltip": false,
+        "interval": 5,
+        "exec": "/home/chunhou/Documents/scripts/external_ip"
+    },
+
 	"custom/honeycomb-separator-light":{
 		"format": "<span font_family='Firacode Nerd Font' size='large'></span>",
 		"tooltip": false},
@@ -141,16 +142,17 @@
 		"path": "/"
 	},
 	"tray": {
-		"icon-size": 14
+		"icon-size": 14,
+        "spacing": 5
 	},
 	
 	"network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "  {ipaddr}/{cidr}",
+        "tooltip-format": "  {ifname} via {gwaddr}",
+        "format-linked": "  {ifname} (No IP)",
+        "format-disconnected": " ⚠ Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
         }
 }
